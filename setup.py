@@ -15,5 +15,7 @@ setup(
     include_package_data=True,
     install_requires=reqs,
     entry_points='''
+        [console_scripts]
+        dae_to_red=dae_to_red.main:main
     ''',
 )
