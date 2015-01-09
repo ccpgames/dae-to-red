@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Regner/dae-to-red.svg)](https://travis-ci.org/Regner/dae-to-red)
+[![Build Status](https://travis-ci.org/ccpgames/dae-to-red.svg)](https://travis-ci.org/ccpgames/dae-to-red)
 
 # dae-to-red
 Extract and convert animation data from Collada files exported from Blender or Maya.
