@@ -1,3 +1,5 @@
+
+
 import collada
 
 
@@ -82,7 +84,7 @@ class Input(object):
 
 
 def _get_tag(element):
-    return  element.tag.split('}')[1]
+    return element.tag.split('}')[1]
 
 
 def _parse_channel(channel_node):
@@ -129,6 +131,7 @@ def _parse_source(source_node):
                 stride = int(stride)
     return Source(source_id, child_tag, count, stride, parameters, values)
 
+
 def _parse_sampler(sampler_node):
     inputs = []
     for input_element in sampler_node.getchildren():
@@ -164,6 +167,7 @@ def _parse_animation(animation_node):
 def get_collada_instance_for_file(f):
     return collada.Collada(f)
 
+
 def rip_animations_from_collada_instance(collada_instance):
     animations = []
     for animation_node in collada_instance.animations:
@@ -175,6 +179,7 @@ class Node(object):
     def __init__(self):
         self.axis_rotations = [None, None, None]
         self.axis_translations = []
+
     def __repr__(self):
         return "Node: " + str(self.axis_rotations) + " " + str(self.axis_translations)
 
@@ -216,6 +221,7 @@ def get_object_id_to_node_dict(collada_instance):
                     elif node_child_tag == "translate":
                         current_node.axis_translations.append((node_child_sid, node_child_elements))
     return nodes
+
 
 def get_up_axis(collada_instance):
     return collada_instance.assetInfo.upaxis

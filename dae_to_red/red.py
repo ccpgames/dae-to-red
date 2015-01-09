@@ -1,5 +1,7 @@
-import templates
-import util
+
+
+from . import templates
+from . import util
 
 
 class EveSpaceScene():
@@ -75,6 +77,7 @@ class Tr2ScalarCurve(object):
             util.float_equal(self.time_offset, other.time_offset)
         )
 
+
 class Tr2EulerRotation(object):
     def __init__(self, object_name, yaw, pitch, roll):
         self.object_name = object_name
@@ -101,6 +104,7 @@ class Tr2EulerRotation(object):
             self.pitch == other.pitch and
             self.roll == other.roll
         )
+
 
 class Tr2VectorKey(object):
     def __init__(self, object_name, value, right_tangent, left_tangent, time):
@@ -130,6 +134,7 @@ class Tr2VectorKey(object):
             self.right_tangent == other.right_tangent and
             self.time == other.time
         )
+
 
 class Tr2VectorCurve(object):
     def __init__(self, object_name, time_offset, length, start_value, end_value, start_tangent, end_tangent):
@@ -186,6 +191,7 @@ class TriCurveSet(object):
             self.object_name == other.object_name and
             self.curves == other.curves
         )
+
     def __repr__(self):
         return """TriCurveSet
         {
