@@ -1,6 +1,9 @@
+
+
 import unittest
-import colladamunge
 import StringIO
+
+from dae_to_red import colladamunge
 
 import example_data
 

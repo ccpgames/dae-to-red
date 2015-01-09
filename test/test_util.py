@@ -1,5 +1,9 @@
+
+
 import unittest
-import util
+
+from dae_to_red  import util
+
 
 class TestQuadraticBezierCurve(unittest.TestCase):
     def __init__(self, *args):

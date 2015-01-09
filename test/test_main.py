@@ -1,11 +1,14 @@
+
+
 import unittest
 
-import axis
-import colladamunge
+from dae_to_red import axis
+from dae_to_red import colladamunge
+from dae_to_red import main
+from dae_to_red import red
+from dae_to_red import util
+
 import example_data
-import main
-import red
-import util
 
 
 class TestReadCurveDataFromAnimation(unittest.TestCase):
