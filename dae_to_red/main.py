@@ -1,13 +1,15 @@
+
+
+import textwrap
 import argparse
 import math
-import os
 import sys
-import textwrap
+import os
 
-import axis
-import colladamunge
-import red
-import util
+from . import axis
+from . import colladamunge
+from . import red
+from . import util
 
 
 DESCRIPTION = """Extracts curve data from a .dae file exported from
@@ -19,14 +21,17 @@ DESCRIPTION = """Extracts curve data from a .dae file exported from
  - Only supports rotation mode XYZ Euler.
 """
 
+
 def axis_to_index(c):
     return ord(c) - ord('X')
+
 
 def get_parameter_offset(parameter_name, parameter_list):
     for i, p in enumerate(parameter_list):
         if p["name"] == parameter_name:
             return i
     raise RuntimeError("Parameter not in list")
+
 
 def read_source_dict_from_animation(animation):
     source_dict = {}
@@ -40,6 +45,7 @@ def read_source_dict_from_animation(animation):
                 "count": source.count,
                 }
     return source_dict
+
 
 def read_curve_data_from_animation(animation, curves):
     if not animation.samplers:
@@ -96,8 +102,6 @@ def read_curve_data_from_animation(animation, curves):
                     raise RuntimeError("Unsupported curve type %s" % curve_type)
 
                 curves[target_object][target_translation][target_param].append(curve)
-
-
 
 
 def evaluate_curve_values(curves):
@@ -225,8 +229,6 @@ class ObjectConverter(object):
         vector_curve.keys = vector_keys
         curve_set.curves.append(vector_curve)
 
-
-
     def _convert_axis_rotation(self, axis_key, curve_name):
         if axis_key not in self.object_data:
             return None
@@ -298,6 +300,7 @@ def convert_object(curve_values, nodes, object_name, axis_converter):
     curve_set = converter.convert_object()
     return curve_set
 
+
 def convert_file(source_file, target_file):
     collada_instance = colladamunge.get_collada_instance_for_file(source_file)
     animations = colladamunge.rip_animations_from_collada_instance(collada_instance)
@@ -323,6 +326,7 @@ def convert_file(source_file, target_file):
 
     with open(target_file, 'w') as f:
         f.write(str(space_scene))
+
 
 def main():
     parser = argparse.ArgumentParser(

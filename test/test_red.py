@@ -1,5 +1,9 @@
+
+
 import unittest
-import red
+
+from dae_to_red import red
+
 
 class TestTr2Tr2ScalarCurve(unittest.TestCase):
     def test_str(self):

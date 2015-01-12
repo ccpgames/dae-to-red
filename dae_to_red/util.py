@@ -1,8 +1,12 @@
+
+
 def float_equal(f1, f2):
     return abs(f1 - f2) <= 0.0000000001
 
+
 def point2d_equal(p0, p1):
     return float_equal(p0[0], p1[0]) and float_equal(p0[1], p1[1])
+
 
 class QuadraticHermiteCurve(object):
     def __init__(self, p0, p1, c0, c1, start_time, end_time):
@@ -42,6 +46,7 @@ class QuadraticHermiteCurve(object):
             self.start_time == other.start_time and
             self.end_time == other.end_time
         )
+
 
 class QuadraticBezierCurve(object):
     def __init__(self, p0, p1, c0, c1, start_time, end_time):
@@ -109,6 +114,7 @@ class QuadraticBezierCurve(object):
                    start_time = self.start_time,
                    end_time = self.end_time
         )
+
 
 def get_all(key, *args):
     return [i[key] for i in args]
