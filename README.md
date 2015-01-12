@@ -20,7 +20,7 @@ description: |
   Example scene. Three identical drones are bound to matching curves.
   Note that the names of the objects that are used for the actors in the animation software
   need to match the ones that are used in the scene file.
-  The path to the generated file is %SHARED_CACHE%\curves\example_animation.red
+  The path to the generated file is %SHARED_CACHE%\probe\res\curves\example_animation.red
 commands:
   - [scene, m10]
   - [set_camera_position, [0.0, 1.0, 40.0]]
