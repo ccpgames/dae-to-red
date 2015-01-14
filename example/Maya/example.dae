@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>hrafng</author>
+      <authoring_tool>OpenCOLLADA2014</authoring_tool>
+      <comments>
+			ColladaMaya export options: 
+			bakeTransforms=0;relativePaths=1;copyTextures=0;exportTriangles=0;exportCgfxFileReferences=1;
+			isSampling=0;curveConstrainSampling=0;removeStaticCurves=1;exportPolygonMeshes=1;exportLights=1;
+			exportCameras=1;exportJointsAndSkin=1;exportAnimations=1;exportInvisibleNodes=0;exportDefaultCameras=0;
+			exportTexCoords=1;exportNormals=1;exportNormalsPerVertex=1;exportVertexColors=1;exportVertexColorsPerVertex=1;
+			exportTexTangents=0;exportTangents=0;exportReferencedMaterials=1;exportMaterialsOnly=0;
+			exportXRefs=1;dereferenceXRefs=1;exportCameraAsLookat=0;cameraXFov=0;cameraYFov=1;doublePrecision=0
+		</comments>
+      <source_data>file:///C:/Users/hrafng/Documents/GitHub/dae-to-red/example/Maya/example.ma</source_data>
+    </contributor>
+    <created>2015-01-14T10:59:43</created>
+    <modified>2015-01-14T10:59:43</modified>
+    <unit name="centimeter" meter="0.01"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="example">
+      <node id="nurbsSphere1" name="nurbsSphere1" type="NODE">
+        <translate sid="translate">10 5 0</translate>
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>nurbsSphere1</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="nurbsSphere1_1" name="maya_xy_nurbsSphere1" type="NODE">
+        <translate sid="translate">-0.401735 0 0</translate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>maya_xy_nurbsSphere1</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="nurbsSphere1_2" name="maya_xy_nurbsSphere2" type="NODE">
+        <translate sid="translate">-0.401735 0 0</translate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>maya_xy_nurbsSphere2</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="nurbsSphere1_3" name="maya_xy_nurbsSphere3" type="NODE">
+        <translate sid="translate">-0.401735 0 0</translate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>maya_xy_nurbsSphere3</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="nurbsSphere2" name="nurbsSphere2" type="NODE">
+        <translate sid="translate">10 0 0</translate>
+        <rotate sid="rotateX">1 0 0 360</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>nurbsSphere2</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="nurbsSphere3" name="nurbsSphere3" type="NODE">
+        <translate sid="translate">-5 0 10</translate>
+        <rotate sid="rotateZ">0 0 1 360</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>nurbsSphere3</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="nurbsSphere4" name="nurbsSphere4" type="NODE">
+        <translate sid="translate">5 10 0</translate>
+        <rotate sid="rotateY">0 1 0 360</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>nurbsSphere4</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="Center" name="Center" type="NODE">
+        <translate sid="translate">10 0 0</translate>
+        <rotate sid="rotateX">1 0 0 360</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>Center</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="Left" name="Left" type="NODE">
+        <translate sid="translate">-5 0 10</translate>
+        <rotate sid="rotateZ">0 0 1 360</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>Left</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+      <node id="Right" name="Right" type="NODE">
+        <translate sid="translate">5 10 0</translate>
+        <rotate sid="rotateY">0 1 0 360</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>Right</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <library_animations>
+    <animation id="nurbsSphere1.translate_nurbsSphere1">
+      <source id="nurbsSphere1.translate_nurbsSphere1_translate-input" name="nurbsSphere1.translate_nurbsSphere1_translate-input">
+        <float_array id="nurbsSphere1.translate_nurbsSphere1_translate-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere1.translate_nurbsSphere1_translate-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="nurbsSphere1.translate_nurbsSphere1_translate-output" name="nurbsSphere1.translate_nurbsSphere1_translate-output">
+        <float_array id="nurbsSphere1.translate_nurbsSphere1_translate-output-array" count="6">-0.401735 0 0 10 5 0 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere1.translate_nurbsSphere1_translate-output-array" count="2" stride="3">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+            <param name="Z" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere1.translate_nurbsSphere1_translate-interpolation" name="nurbsSphere1.translate_nurbsSphere1_translate-interpolation">
+        <Name_array id="nurbsSphere1.translate_nurbsSphere1_translate-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#nurbsSphere1.translate_nurbsSphere1_translate-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere1.translate_nurbsSphere1_translate-intangent" name="nurbsSphere1.translate_nurbsSphere1_translate-intangent">
+        <float_array id="nurbsSphere1.translate_nurbsSphere1_translate-intangent-array" count="12">-0.2916667 -0.401735 -0.2916667 0 -0.2916667 0 6.680555 10 6.680555 5 6.680555 0 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere1.translate_nurbsSphere1_translate-intangent-array" count="2" stride="6">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere1.translate_nurbsSphere1_translate-outtangent" name="nurbsSphere1.translate_nurbsSphere1_translate-outtangent">
+        <float_array id="nurbsSphere1.translate_nurbsSphere1_translate-outtangent-array" count="12">3.361111 -0.401735 3.361111 0 3.361111 0 10.33333 10 10.33333 5 10.33333 0 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere1.translate_nurbsSphere1_translate-outtangent-array" count="2" stride="6">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="nurbsSphere1.translate_nurbsSphere1_translate-sampler">
+        <input semantic="INPUT" source="#nurbsSphere1.translate_nurbsSphere1_translate-input"/>
+        <input semantic="OUTPUT" source="#nurbsSphere1.translate_nurbsSphere1_translate-output"/>
+        <input semantic="INTERPOLATION" source="#nurbsSphere1.translate_nurbsSphere1_translate-interpolation"/>
+        <input semantic="IN_TANGENT" source="#nurbsSphere1.translate_nurbsSphere1_translate-intangent"/>
+        <input semantic="OUT_TANGENT" source="#nurbsSphere1.translate_nurbsSphere1_translate-outtangent"/>
+      </sampler>
+      <channel source="#nurbsSphere1.translate_nurbsSphere1_translate-sampler" target="nurbsSphere1/translate"/>
+    </animation>
+    <animation id="nurbsSphere2.translate_nurbsSphere2">
+      <source id="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-input" name="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-input">
+        <float_array id="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-output" name="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-output">
+        <float_array id="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-output-array" count="2">0 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-output-array" count="2" stride="1">
+            <param name="X" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-interpolation" name="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-interpolation">
+        <Name_array id="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-intangent" name="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-intangent">
+        <float_array id="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-intangent-array" count="4">-0.2916667 0 6.680555 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-outtangent" name="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-outtangent">
+        <float_array id="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-outtangent-array" count="4">3.361111 0 10.33333 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-sampler">
+        <input semantic="INPUT" source="#nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-input"/>
+        <input semantic="OUTPUT" source="#nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-output"/>
+        <input semantic="INTERPOLATION" source="#nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-interpolation"/>
+        <input semantic="IN_TANGENT" source="#nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-intangent"/>
+        <input semantic="OUT_TANGENT" source="#nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-outtangent"/>
+      </sampler>
+      <channel source="#nurbsSphere2.translate_nurbsSphere2_nurbsSphere2.translateX_nurbsSphere2-sampler" target="nurbsSphere2/translate.X"/>
+    </animation>
+    <animation id="nurbsSphere2.rotateX_nurbsSphere2">
+      <source id="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-input" name="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-input">
+        <float_array id="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-output" name="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-output">
+        <float_array id="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-output-array" count="2">0 360 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-output-array" count="2" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-interpolation" name="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-interpolation">
+        <Name_array id="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-intangent" name="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-intangent">
+        <float_array id="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-intangent-array" count="4">-0.2916667 0 6.680555 360 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-outtangent" name="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-outtangent">
+        <float_array id="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-outtangent-array" count="4">3.361111 0 10.33333 360 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-sampler">
+        <input semantic="INPUT" source="#nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-input"/>
+        <input semantic="OUTPUT" source="#nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-output"/>
+        <input semantic="INTERPOLATION" source="#nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-interpolation"/>
+        <input semantic="IN_TANGENT" source="#nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-intangent"/>
+        <input semantic="OUT_TANGENT" source="#nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-outtangent"/>
+      </sampler>
+      <channel source="#nurbsSphere2.rotateX_nurbsSphere2_nurbsSphere2.rotateX_nurbsSphere2-sampler" target="nurbsSphere2/rotateX.ANGLE"/>
+    </animation>
+    <animation id="nurbsSphere3.translate_nurbsSphere3">
+      <source id="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-input" name="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-input">
+        <float_array id="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-output" name="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-output">
+        <float_array id="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-output-array" count="2">0 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-output-array" count="2" stride="1">
+            <param name="Z" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-interpolation" name="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-interpolation">
+        <Name_array id="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-intangent" name="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-intangent">
+        <float_array id="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-intangent-array" count="4">-0.2916667 0 6.680555 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-outtangent" name="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-outtangent">
+        <float_array id="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-outtangent-array" count="4">3.361111 0 10.33333 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-sampler">
+        <input semantic="INPUT" source="#nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-input"/>
+        <input semantic="OUTPUT" source="#nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-output"/>
+        <input semantic="INTERPOLATION" source="#nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-interpolation"/>
+        <input semantic="IN_TANGENT" source="#nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-intangent"/>
+        <input semantic="OUT_TANGENT" source="#nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-outtangent"/>
+      </sampler>
+      <channel source="#nurbsSphere3.translate_nurbsSphere3_nurbsSphere3.translateZ_nurbsSphere3-sampler" target="nurbsSphere3/translate.Z"/>
+    </animation>
+    <animation id="nurbsSphere3.rotateZ_nurbsSphere3">
+      <source id="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-input" name="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-input">
+        <float_array id="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-output" name="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-output">
+        <float_array id="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-output-array" count="2">0 360 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-output-array" count="2" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-interpolation" name="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-interpolation">
+        <Name_array id="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-intangent" name="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-intangent">
+        <float_array id="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-intangent-array" count="4">-0.2916667 0 6.680555 360 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-outtangent" name="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-outtangent">
+        <float_array id="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-outtangent-array" count="4">3.361111 0 10.33333 360 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-sampler">
+        <input semantic="INPUT" source="#nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-input"/>
+        <input semantic="OUTPUT" source="#nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-output"/>
+        <input semantic="INTERPOLATION" source="#nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-interpolation"/>
+        <input semantic="IN_TANGENT" source="#nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-intangent"/>
+        <input semantic="OUT_TANGENT" source="#nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-outtangent"/>
+      </sampler>
+      <channel source="#nurbsSphere3.rotateZ_nurbsSphere3_nurbsSphere3.rotateZ_nurbsSphere3-sampler" target="nurbsSphere3/rotateZ.ANGLE"/>
+    </animation>
+    <animation id="nurbsSphere4.translate_nurbsSphere4">
+      <source id="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-input" name="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-input">
+        <float_array id="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-output" name="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-output">
+        <float_array id="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-output-array" count="2">0 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-output-array" count="2" stride="1">
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-interpolation" name="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-interpolation">
+        <Name_array id="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-intangent" name="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-intangent">
+        <float_array id="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-intangent-array" count="4">-0.2916667 0 6.680555 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-outtangent" name="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-outtangent">
+        <float_array id="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-outtangent-array" count="4">3.361111 0 10.33333 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-sampler">
+        <input semantic="INPUT" source="#nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-input"/>
+        <input semantic="OUTPUT" source="#nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-output"/>
+        <input semantic="INTERPOLATION" source="#nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-interpolation"/>
+        <input semantic="IN_TANGENT" source="#nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-intangent"/>
+        <input semantic="OUT_TANGENT" source="#nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-outtangent"/>
+      </sampler>
+      <channel source="#nurbsSphere4.translate_nurbsSphere4_nurbsSphere4.translateY_nurbsSphere4-sampler" target="nurbsSphere4/translate.Y"/>
+    </animation>
+    <animation id="nurbsSphere4.rotateY_nurbsSphere4">
+      <source id="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-input" name="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-input">
+        <float_array id="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-output" name="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-output">
+        <float_array id="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-output-array" count="2">0 360 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-output-array" count="2" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-interpolation" name="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-interpolation">
+        <Name_array id="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-intangent" name="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-intangent">
+        <float_array id="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-intangent-array" count="4">-0.2916667 0 6.680555 360 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-outtangent" name="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-outtangent">
+        <float_array id="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-outtangent-array" count="4">3.361111 0 10.33333 360 </float_array>
+        <technique_common>
+          <accessor source="#nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-sampler">
+        <input semantic="INPUT" source="#nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-input"/>
+        <input semantic="OUTPUT" source="#nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-output"/>
+        <input semantic="INTERPOLATION" source="#nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-interpolation"/>
+        <input semantic="IN_TANGENT" source="#nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-intangent"/>
+        <input semantic="OUT_TANGENT" source="#nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-outtangent"/>
+      </sampler>
+      <channel source="#nurbsSphere4.rotateY_nurbsSphere4_nurbsSphere4.rotateY_nurbsSphere4-sampler" target="nurbsSphere4/rotateY.ANGLE"/>
+    </animation>
+    <animation id="Center.translate_Center">
+      <source id="Center.translate_Center_Center.translateX_Center-input" name="Center.translate_Center_Center.translateX_Center-input">
+        <float_array id="Center.translate_Center_Center.translateX_Center-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#Center.translate_Center_Center.translateX_Center-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="Center.translate_Center_Center.translateX_Center-output" name="Center.translate_Center_Center.translateX_Center-output">
+        <float_array id="Center.translate_Center_Center.translateX_Center-output-array" count="2">0 10 </float_array>
+        <technique_common>
+          <accessor source="#Center.translate_Center_Center.translateX_Center-output-array" count="2" stride="1">
+            <param name="X" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Center.translate_Center_Center.translateX_Center-interpolation" name="Center.translate_Center_Center.translateX_Center-interpolation">
+        <Name_array id="Center.translate_Center_Center.translateX_Center-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#Center.translate_Center_Center.translateX_Center-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Center.translate_Center_Center.translateX_Center-intangent" name="Center.translate_Center_Center.translateX_Center-intangent">
+        <float_array id="Center.translate_Center_Center.translateX_Center-intangent-array" count="4">-0.2916667 0 6.680555 10 </float_array>
+        <technique_common>
+          <accessor source="#Center.translate_Center_Center.translateX_Center-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Center.translate_Center_Center.translateX_Center-outtangent" name="Center.translate_Center_Center.translateX_Center-outtangent">
+        <float_array id="Center.translate_Center_Center.translateX_Center-outtangent-array" count="4">3.361111 0 10.33333 10 </float_array>
+        <technique_common>
+          <accessor source="#Center.translate_Center_Center.translateX_Center-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Center.translate_Center_Center.translateX_Center-sampler">
+        <input semantic="INPUT" source="#Center.translate_Center_Center.translateX_Center-input"/>
+        <input semantic="OUTPUT" source="#Center.translate_Center_Center.translateX_Center-output"/>
+        <input semantic="INTERPOLATION" source="#Center.translate_Center_Center.translateX_Center-interpolation"/>
+        <input semantic="IN_TANGENT" source="#Center.translate_Center_Center.translateX_Center-intangent"/>
+        <input semantic="OUT_TANGENT" source="#Center.translate_Center_Center.translateX_Center-outtangent"/>
+      </sampler>
+      <channel source="#Center.translate_Center_Center.translateX_Center-sampler" target="Center/translate.X"/>
+    </animation>
+    <animation id="Center.rotateX_Center">
+      <source id="Center.rotateX_Center_Center.rotateX_Center-input" name="Center.rotateX_Center_Center.rotateX_Center-input">
+        <float_array id="Center.rotateX_Center_Center.rotateX_Center-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#Center.rotateX_Center_Center.rotateX_Center-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="Center.rotateX_Center_Center.rotateX_Center-output" name="Center.rotateX_Center_Center.rotateX_Center-output">
+        <float_array id="Center.rotateX_Center_Center.rotateX_Center-output-array" count="2">0 360 </float_array>
+        <technique_common>
+          <accessor source="#Center.rotateX_Center_Center.rotateX_Center-output-array" count="2" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Center.rotateX_Center_Center.rotateX_Center-interpolation" name="Center.rotateX_Center_Center.rotateX_Center-interpolation">
+        <Name_array id="Center.rotateX_Center_Center.rotateX_Center-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#Center.rotateX_Center_Center.rotateX_Center-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Center.rotateX_Center_Center.rotateX_Center-intangent" name="Center.rotateX_Center_Center.rotateX_Center-intangent">
+        <float_array id="Center.rotateX_Center_Center.rotateX_Center-intangent-array" count="4">-0.2916667 0 6.680555 360 </float_array>
+        <technique_common>
+          <accessor source="#Center.rotateX_Center_Center.rotateX_Center-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Center.rotateX_Center_Center.rotateX_Center-outtangent" name="Center.rotateX_Center_Center.rotateX_Center-outtangent">
+        <float_array id="Center.rotateX_Center_Center.rotateX_Center-outtangent-array" count="4">3.361111 0 10.33333 360 </float_array>
+        <technique_common>
+          <accessor source="#Center.rotateX_Center_Center.rotateX_Center-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Center.rotateX_Center_Center.rotateX_Center-sampler">
+        <input semantic="INPUT" source="#Center.rotateX_Center_Center.rotateX_Center-input"/>
+        <input semantic="OUTPUT" source="#Center.rotateX_Center_Center.rotateX_Center-output"/>
+        <input semantic="INTERPOLATION" source="#Center.rotateX_Center_Center.rotateX_Center-interpolation"/>
+        <input semantic="IN_TANGENT" source="#Center.rotateX_Center_Center.rotateX_Center-intangent"/>
+        <input semantic="OUT_TANGENT" source="#Center.rotateX_Center_Center.rotateX_Center-outtangent"/>
+      </sampler>
+      <channel source="#Center.rotateX_Center_Center.rotateX_Center-sampler" target="Center/rotateX.ANGLE"/>
+    </animation>
+    <animation id="Left.translate_Left">
+      <source id="Left.translate_Left_Left.translateZ_Left-input" name="Left.translate_Left_Left.translateZ_Left-input">
+        <float_array id="Left.translate_Left_Left.translateZ_Left-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#Left.translate_Left_Left.translateZ_Left-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="Left.translate_Left_Left.translateZ_Left-output" name="Left.translate_Left_Left.translateZ_Left-output">
+        <float_array id="Left.translate_Left_Left.translateZ_Left-output-array" count="2">0 10 </float_array>
+        <technique_common>
+          <accessor source="#Left.translate_Left_Left.translateZ_Left-output-array" count="2" stride="1">
+            <param name="Z" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Left.translate_Left_Left.translateZ_Left-interpolation" name="Left.translate_Left_Left.translateZ_Left-interpolation">
+        <Name_array id="Left.translate_Left_Left.translateZ_Left-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#Left.translate_Left_Left.translateZ_Left-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Left.translate_Left_Left.translateZ_Left-intangent" name="Left.translate_Left_Left.translateZ_Left-intangent">
+        <float_array id="Left.translate_Left_Left.translateZ_Left-intangent-array" count="4">-0.2916667 0 6.680555 10 </float_array>
+        <technique_common>
+          <accessor source="#Left.translate_Left_Left.translateZ_Left-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Left.translate_Left_Left.translateZ_Left-outtangent" name="Left.translate_Left_Left.translateZ_Left-outtangent">
+        <float_array id="Left.translate_Left_Left.translateZ_Left-outtangent-array" count="4">3.361111 0 10.33333 10 </float_array>
+        <technique_common>
+          <accessor source="#Left.translate_Left_Left.translateZ_Left-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Left.translate_Left_Left.translateZ_Left-sampler">
+        <input semantic="INPUT" source="#Left.translate_Left_Left.translateZ_Left-input"/>
+        <input semantic="OUTPUT" source="#Left.translate_Left_Left.translateZ_Left-output"/>
+        <input semantic="INTERPOLATION" source="#Left.translate_Left_Left.translateZ_Left-interpolation"/>
+        <input semantic="IN_TANGENT" source="#Left.translate_Left_Left.translateZ_Left-intangent"/>
+        <input semantic="OUT_TANGENT" source="#Left.translate_Left_Left.translateZ_Left-outtangent"/>
+      </sampler>
+      <channel source="#Left.translate_Left_Left.translateZ_Left-sampler" target="Left/translate.Z"/>
+    </animation>
+    <animation id="Left.rotateZ_Left">
+      <source id="Left.rotateZ_Left_Left.rotateZ_Left-input" name="Left.rotateZ_Left_Left.rotateZ_Left-input">
+        <float_array id="Left.rotateZ_Left_Left.rotateZ_Left-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#Left.rotateZ_Left_Left.rotateZ_Left-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="Left.rotateZ_Left_Left.rotateZ_Left-output" name="Left.rotateZ_Left_Left.rotateZ_Left-output">
+        <float_array id="Left.rotateZ_Left_Left.rotateZ_Left-output-array" count="2">0 360 </float_array>
+        <technique_common>
+          <accessor source="#Left.rotateZ_Left_Left.rotateZ_Left-output-array" count="2" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Left.rotateZ_Left_Left.rotateZ_Left-interpolation" name="Left.rotateZ_Left_Left.rotateZ_Left-interpolation">
+        <Name_array id="Left.rotateZ_Left_Left.rotateZ_Left-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#Left.rotateZ_Left_Left.rotateZ_Left-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Left.rotateZ_Left_Left.rotateZ_Left-intangent" name="Left.rotateZ_Left_Left.rotateZ_Left-intangent">
+        <float_array id="Left.rotateZ_Left_Left.rotateZ_Left-intangent-array" count="4">-0.2916667 0 6.680555 360 </float_array>
+        <technique_common>
+          <accessor source="#Left.rotateZ_Left_Left.rotateZ_Left-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Left.rotateZ_Left_Left.rotateZ_Left-outtangent" name="Left.rotateZ_Left_Left.rotateZ_Left-outtangent">
+        <float_array id="Left.rotateZ_Left_Left.rotateZ_Left-outtangent-array" count="4">3.361111 0 10.33333 360 </float_array>
+        <technique_common>
+          <accessor source="#Left.rotateZ_Left_Left.rotateZ_Left-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Left.rotateZ_Left_Left.rotateZ_Left-sampler">
+        <input semantic="INPUT" source="#Left.rotateZ_Left_Left.rotateZ_Left-input"/>
+        <input semantic="OUTPUT" source="#Left.rotateZ_Left_Left.rotateZ_Left-output"/>
+        <input semantic="INTERPOLATION" source="#Left.rotateZ_Left_Left.rotateZ_Left-interpolation"/>
+        <input semantic="IN_TANGENT" source="#Left.rotateZ_Left_Left.rotateZ_Left-intangent"/>
+        <input semantic="OUT_TANGENT" source="#Left.rotateZ_Left_Left.rotateZ_Left-outtangent"/>
+      </sampler>
+      <channel source="#Left.rotateZ_Left_Left.rotateZ_Left-sampler" target="Left/rotateZ.ANGLE"/>
+    </animation>
+    <animation id="Right.translate_Right">
+      <source id="Right.translate_Right_Right.translateY_Right-input" name="Right.translate_Right_Right.translateY_Right-input">
+        <float_array id="Right.translate_Right_Right.translateY_Right-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#Right.translate_Right_Right.translateY_Right-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="Right.translate_Right_Right.translateY_Right-output" name="Right.translate_Right_Right.translateY_Right-output">
+        <float_array id="Right.translate_Right_Right.translateY_Right-output-array" count="2">0 10 </float_array>
+        <technique_common>
+          <accessor source="#Right.translate_Right_Right.translateY_Right-output-array" count="2" stride="1">
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Right.translate_Right_Right.translateY_Right-interpolation" name="Right.translate_Right_Right.translateY_Right-interpolation">
+        <Name_array id="Right.translate_Right_Right.translateY_Right-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#Right.translate_Right_Right.translateY_Right-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Right.translate_Right_Right.translateY_Right-intangent" name="Right.translate_Right_Right.translateY_Right-intangent">
+        <float_array id="Right.translate_Right_Right.translateY_Right-intangent-array" count="4">-0.2916667 0 6.680555 10 </float_array>
+        <technique_common>
+          <accessor source="#Right.translate_Right_Right.translateY_Right-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Right.translate_Right_Right.translateY_Right-outtangent" name="Right.translate_Right_Right.translateY_Right-outtangent">
+        <float_array id="Right.translate_Right_Right.translateY_Right-outtangent-array" count="4">3.361111 0 10.33333 10 </float_array>
+        <technique_common>
+          <accessor source="#Right.translate_Right_Right.translateY_Right-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Right.translate_Right_Right.translateY_Right-sampler">
+        <input semantic="INPUT" source="#Right.translate_Right_Right.translateY_Right-input"/>
+        <input semantic="OUTPUT" source="#Right.translate_Right_Right.translateY_Right-output"/>
+        <input semantic="INTERPOLATION" source="#Right.translate_Right_Right.translateY_Right-interpolation"/>
+        <input semantic="IN_TANGENT" source="#Right.translate_Right_Right.translateY_Right-intangent"/>
+        <input semantic="OUT_TANGENT" source="#Right.translate_Right_Right.translateY_Right-outtangent"/>
+      </sampler>
+      <channel source="#Right.translate_Right_Right.translateY_Right-sampler" target="Right/translate.Y"/>
+    </animation>
+    <animation id="Right.rotateY_Right">
+      <source id="Right.rotateY_Right_Right.rotateY_Right-input" name="Right.rotateY_Right_Right.rotateY_Right-input">
+        <float_array id="Right.rotateY_Right_Right.rotateY_Right-input-array" count="2">0.04166662 10 </float_array>
+        <technique_common>
+          <accessor source="#Right.rotateY_Right_Right.rotateY_Right-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="OpenCOLLADAMaya">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="Right.rotateY_Right_Right.rotateY_Right-output" name="Right.rotateY_Right_Right.rotateY_Right-output">
+        <float_array id="Right.rotateY_Right_Right.rotateY_Right-output-array" count="2">0 360 </float_array>
+        <technique_common>
+          <accessor source="#Right.rotateY_Right_Right.rotateY_Right-output-array" count="2" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Right.rotateY_Right_Right.rotateY_Right-interpolation" name="Right.rotateY_Right_Right.rotateY_Right-interpolation">
+        <Name_array id="Right.rotateY_Right_Right.rotateY_Right-interpolation-array" count="2">BEZIER BEZIER </Name_array>
+        <technique_common>
+          <accessor source="#Right.rotateY_Right_Right.rotateY_Right-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Right.rotateY_Right_Right.rotateY_Right-intangent" name="Right.rotateY_Right_Right.rotateY_Right-intangent">
+        <float_array id="Right.rotateY_Right_Right.rotateY_Right-intangent-array" count="4">-0.2916667 0 6.680555 360 </float_array>
+        <technique_common>
+          <accessor source="#Right.rotateY_Right_Right.rotateY_Right-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Right.rotateY_Right_Right.rotateY_Right-outtangent" name="Right.rotateY_Right_Right.rotateY_Right-outtangent">
+        <float_array id="Right.rotateY_Right_Right.rotateY_Right-outtangent-array" count="4">3.361111 0 10.33333 360 </float_array>
+        <technique_common>
+          <accessor source="#Right.rotateY_Right_Right.rotateY_Right-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Right.rotateY_Right_Right.rotateY_Right-sampler">
+        <input semantic="INPUT" source="#Right.rotateY_Right_Right.rotateY_Right-input"/>
+        <input semantic="OUTPUT" source="#Right.rotateY_Right_Right.rotateY_Right-output"/>
+        <input semantic="INTERPOLATION" source="#Right.rotateY_Right_Right.rotateY_Right-interpolation"/>
+        <input semantic="IN_TANGENT" source="#Right.rotateY_Right_Right.rotateY_Right-intangent"/>
+        <input semantic="OUT_TANGENT" source="#Right.rotateY_Right_Right.rotateY_Right-outtangent"/>
+      </sampler>
+      <channel source="#Right.rotateY_Right_Right.rotateY_Right-sampler" target="Right/rotateY.ANGLE"/>
+    </animation>
+  </library_animations>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

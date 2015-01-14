@@ -1,0 +1,19 @@
+name: example
+description: |
+  Example scene for binding animation data
+commands:
+  - [scene, m10]
+  - [set_camera_position, [0.0, 0.0, 30.0]]
+  - [set_camera_focus, [0.0, 0.0, 0.0]]
+  - [actor, Left, 'res:/dx9/model/drone/ore/medium/oredm1/oredm1_t1.red']
+  - [actor, Center, 'res:/dx9/model/drone/ore/medium/oredm1/oredm1_t1.red']
+  - [actor, Right, 'res:/dx9/model/drone/ore/medium/oredm1/oredm1_t1.red']
+  - [add_actor, Left]
+  - [add_actor, Center]
+  - [add_actor, Right]
+  - [preload_lods]
+  - [wait_for_loads]
+  - [bind_matching_dynamics, 'res:/curves/example.red']
+  - [start_measurement, drone]
+  - [sleep, 30]
+  - [stop_measurement, drone]
