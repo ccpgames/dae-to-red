@@ -338,7 +338,7 @@ def main():
     parser.add_argument('targetfile')
     args = parser.parse_args()
     target_dir = os.path.dirname(args.targetfile)
-    if not os.path.exists(target_dir):
+    if not os.path.exists(os.path.abspath(target_dir)):
         sys.stderr.write("The target directory \"%s\" does not exist" % target_dir)
         sys.exit(1)
     convert_file(args.sourcefile, args.targetfile)
