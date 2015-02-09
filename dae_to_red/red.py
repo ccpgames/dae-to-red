@@ -60,7 +60,7 @@ class Tr2ScalarCurve(object):
             time_offset=self.time_offset,
             )
         if self.scalar_keys:
-            s += "\n        keys:"
+            s += "\n            keys:"
         for i in self.scalar_keys:
             s += str(i)
 
@@ -158,7 +158,7 @@ class Tr2VectorCurve(object):
             end_tangent=self.end_tangent,
         )
         if self.keys:
-            s += "\n    keys:"
+            s += "\n        keys:"
             for i in self.keys:
                 s += str(i)
         return s

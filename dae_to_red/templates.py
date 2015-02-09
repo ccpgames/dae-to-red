@@ -19,20 +19,20 @@ rotation_curve_header = """
             timeOffset: {time_offset}"""
 
 scalar_key = """
-            -   type: Tr2ScalarKey
-                value: {value}
+                -   type: Tr2ScalarKey
+                    value: {value}
+                    time: {time}
+                    leftTangent: {left_tangent}
+                    rightTangent: {right_tangent}
+                    interpolation: 2"""
+
+vector_key = """
+            -   type: Tr2Vector3Key
                 time: {time}
+                value: {value}
                 leftTangent: {left_tangent}
                 rightTangent: {right_tangent}
                 interpolation: 2"""
-
-vector_key = """
-        -   type: Tr2Vector3Key
-            time: {time}
-            value: {value}
-            leftTangent: {left_tangent}
-            rightTangent: {right_tangent}
-            interpolation: 2"""
 
 location_curve_header = """
     - &location_curve_{object_name}
