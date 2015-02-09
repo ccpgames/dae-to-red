@@ -2,3 +2,5 @@ env/
 .idea/
 *.pyc
 dae_to_red.egg-info/
+build/
+dist/
