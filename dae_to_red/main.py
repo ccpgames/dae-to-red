@@ -127,7 +127,8 @@ def evaluate_curve_values(curves):
 
 
 def compute_tangent_from_vector(p):
-    return p[1] / p[0]
+    len_p = math.sqrt(p[0]**2 + p[1]**2)
+    return (p[1] / p[0]) / len_p
 
 
 def compute_tangents_for_translation_vector(xyz_tangent_vector_vector):
