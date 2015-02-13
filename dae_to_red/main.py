@@ -67,8 +67,8 @@ def read_curve_data_from_animation(animation, curves):
                 start_point = (input_dict["values"][i], output_dict["values"][i * out_stride + param_index])
                 end_point = (input_dict["values"][i+1], output_dict["values"][i * (out_stride) + out_stride + param_index])
 
-                control_point_1 = (source_dict["OUT_TANGENT"]["values"][i*2], source_dict["OUT_TANGENT"]["values"][i*2+1])
-                control_point_2 = (source_dict["IN_TANGENT"]["values"][i*2+2],source_dict["IN_TANGENT"]["values"][i*2+3])
+                control_point_1 = (source_dict["OUT_TANGENT"]["values"][param_index * i * 2], source_dict["OUT_TANGENT"]["values"][param_index * i *2 + 1])
+                control_point_2 = (source_dict["IN_TANGENT"]["values"][param_index * i * 2 + 2],source_dict["IN_TANGENT"]["values"][param_index * i * 2 + 3])
 
                 target_object = animation.channels[c].target.split("/")[0]
                 target_translation = animation.channels[c].target.split("/")[1].split(".")[0]
@@ -157,8 +157,8 @@ class ObjectConverter(object):
         return red.Tr2VectorKey(
             self.object_name,
             value,
-            left_tangent,
             right_tangent,
+            left_tangent,
             time,
         )
 
