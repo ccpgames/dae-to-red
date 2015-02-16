@@ -126,13 +126,15 @@ def evaluate_curve_values(curves):
     return d
 
 
-def compute_tangent_from_vector(p):
-    len_p = math.sqrt(p[0]**2 + p[1]**2)
-    return (p[1] / p[0]) / len_p
+def compute_tangent_from_vector(p, dt):
+    return (p[1] / p[0]) * dt
 
 
-def compute_tangents_for_translation_vector(xyz_tangent_vector_vector):
-    return map(compute_tangent_from_vector, xyz_tangent_vector_vector)
+def compute_tangents_for_translation_vector(xyz_tangent_vector_vector, dt):
+    r = []
+    for i in xyz_tangent_vector_vector:
+        r.append(compute_tangent_from_vector(i, dt))
+    return r
 
 
 class ObjectConverter(object):
@@ -150,8 +152,10 @@ class ObjectConverter(object):
         left_tangent = util.get_all("control_2", x, y, z)
         right_tangent = util.get_all("control_1", next_x, next_y, next_z)
 
-        right_tangent = compute_tangents_for_translation_vector(right_tangent)
-        left_tangent = compute_tangents_for_translation_vector(left_tangent)
+        dt = x["end_time"] - x["start_time"]
+
+        right_tangent = compute_tangents_for_translation_vector(right_tangent, dt)
+        left_tangent = compute_tangents_for_translation_vector(left_tangent, dt)
 
         time = x["end_time"]
         return red.Tr2VectorKey(
@@ -193,8 +197,8 @@ class ObjectConverter(object):
                 length = last["end_time"] - first["start_time"]
                 start_value = first["start_value"]
                 end_value = last["end_value"]
-                start_tangent = compute_tangent_from_vector(first["control_1"])
-                end_tangent = compute_tangent_from_vector(last["control_2"])
+                start_tangent = compute_tangent_from_vector(first["control_1"], first["end_time"])
+                end_tangent = compute_tangent_from_vector(last["control_2"], first["start_time"])
                 start_time = first["start_time"]
                 keys = ov.keys()
 
@@ -249,21 +253,25 @@ class ObjectConverter(object):
         end_time = curve_values[-1]["end_time"]
         length = end_time - start_time
 
+        first = curve_values[0]
+        last = curve_values[-1]
+
         curve = red.Tr2ScalarCurve(
             curve_name,
             start_time,
             length,
             start_value,
             math.radians(curve_values[-1]["end_value"]),
-            compute_tangent_from_vector((curve_values[0]["control_1"][0], math.radians(curve_values[0]["control_1"][1]))),
-            compute_tangent_from_vector((curve_values[-1]["control_2"][0], math.radians(curve_values[-1]["control_2"][1]))),
+            compute_tangent_from_vector(first["control_1"], first["end_time"]),
+            compute_tangent_from_vector(last["control_2"], last["end_time"]),
         )
-        for i, val in enumerate(curve_values[:-1]):
+        for i, current in enumerate(curve_values[:-1]):
+            next = curve_values[i + 1]
             key = red.Tr2ScalarKey(
-                val["end_time"],
-                math.radians(val["end_value"]),
-                compute_tangent_from_vector((val["control_2"][0], math.radians(val["control_2"][1]))),
-                compute_tangent_from_vector((curve_values[i+1]["control_1"][0], math.radians(curve_values[i+1]["control_1"][1]))),
+                current["end_time"],
+                math.radians(current["end_value"]),
+                compute_tangent_from_vector((current["control_2"][0], math.radians(current["control_2"][1])), current["end_time"] - current["start_time"]),
+                compute_tangent_from_vector((next["control_1"][0], math.radians(next["control_1"][1])), next["end_time"] - next["start_time"]),
             )
             curve.scalar_keys.append(key)
         return curve
