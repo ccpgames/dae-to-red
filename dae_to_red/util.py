@@ -1,7 +1,7 @@
 
 
 def float_equal(f1, f2):
-    return abs(f1 - f2) <= 0.0000000001
+    return abs(f1 - f2) <= 0.000001
 
 
 def point2d_equal(p0, p1):
@@ -45,6 +45,25 @@ class QuadraticHermiteCurve(object):
             point2d_equal(self.control_2, other.control_2) and
             self.start_time == other.start_time and
             self.end_time == other.end_time
+        )
+
+    def __repr__(self):
+        return """QuadraticHermiteCurve:
+        {{
+            start_value: {start_value}
+            end_value: {end_value}
+            control_1: {control_1}
+            control_2: {control_2}
+            start_time: {start_time}
+            end_time: {end_time}
+        }}
+        """.format(
+            start_value = self.start_value,
+            end_value = self.end_value,
+            control_1 = self.control_1,
+            control_2 = self.control_2,
+            start_time = self.start_time,
+            end_time = self.end_time
         )
 
 
@@ -98,14 +117,14 @@ class QuadraticBezierCurve(object):
 
     def __repr__(self):
         return """QuadraticBezierCurve:
-        {
+        {{
             start_value: {start_value}
             end_value: {end_value}
-            control_1: {self.control_1}
-            control_2: {self.control_2}
+            control_1: {control_1}
+            control_2: {control_2}
             start_time: {start_time}
             end_time: {end_time}
-        }
+        }}
         """.format(
                    start_value = self.start_value,
                    end_value = self.end_value,

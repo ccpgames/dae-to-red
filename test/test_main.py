@@ -51,21 +51,25 @@ class TestReadCurveDataFromAnimation(unittest.TestCase):
                         util.QuadraticHermiteCurve(
                             (0.8333333, 0.03813225),
                             (5.458333, 0.03813225),
-                            (4.6361361, 0.0),
-                            (5.4169589999999985, 0.0),
+                            (-1.4477727, 0.0),
+                            (14.8022261, 0.0),
                             0.8333333,
                             5.458333),
                         util.QuadraticHermiteCurve(
                             (5.458333, 0.03813225),
                             (9.875, 0.03813225),
-                            (5.172954000000001, 0.0),
-                            (5.172950999999998, 0.0),
+                            (-15.3227718, 0.0),
+                            (28.052227199999997, 0.0),
                             5.458333,
                             9.875),
                         ]
                 }
             }
         }
+        for i, v in enumerate(expected['Cube']['location']['X']):
+            print expected['Cube']['location']['X'][i]
+            print "#########"
+            print curves['Cube']['location']['X'][i]
         self.assertEqual(expected, curves)
 
 class TestEvaluateCurveValues(unittest.TestCase):
@@ -102,8 +106,7 @@ class TestEvaluateCurveValues(unittest.TestCase):
 
 
 class TestObjectConverter(unittest.TestCase):
-    def __init__(self, *args):
-        super(TestObjectConverter, self).__init__(*args)
+    def setUp(self):
         self.axis_converter = axis.AxisConverter(axis.Axes.Z_UP, axis.Axes.Y_UP)
 
     def testConvertTranslation(self):
@@ -118,8 +121,8 @@ class TestObjectConverter(unittest.TestCase):
         node.axis_translations = [('location', [0,0,0]),('location', [0,0,0]),('location', [0,0,0])]
         converter = main.ObjectConverter(node, data, "MyObject", self.axis_converter)
 
-        expected_start_tangent = [1.3333333333333333, 1.3333333333333333, 1.3333333333333333]
-        expected_end_tangent = [1.2, 1.2, 1.2]
+        expected_start_tangent = [2.6666666666666665, 2.6666666666666665, 2.6666666666666665]
+        expected_end_tangent = [0.0, 0.0, 0.0]
         expected_vector_curve = red.Tr2VectorCurve("MyObject", 0.0, 2.0, 0.0, 2.0, expected_start_tangent, expected_end_tangent)
         expected_vector_curve.start_value = [3.0, 6.0, 0.0]
         expected_vector_curve.end_value = [5.0, 8.0, 2.0]
@@ -140,16 +143,15 @@ class TestObjectConverter(unittest.TestCase):
         node.axis_rotations = [('rotationX', 0),('rotationY', 1),('rotationZ', 2)]
         converter = main.ObjectConverter(node, data, "MyObject", self.axis_converter)
 
-        roll = red.Tr2ScalarCurve("rollCurve",   0.0, 2.0, 0.0174532925199, 0.0523598775598, 0.0232710566933, 0.0209439510239)
-        pitch = red.Tr2ScalarCurve("pitchCurve", 0.0, 2.0, 0.0698131700798, 0.10471975512,   0.0232710566933, 0.0209439510239)
-        yaw = red.Tr2ScalarCurve("yawCurve",     0.0, 2.0, 0.12217304764, 0.157079632679,  0.0232710566933, 0.0209439510239)
+        roll = red.Tr2ScalarCurve("rollCurve",   0.0, 2.0, 0.0174532925199, 0.0523598775598, 2.66666666667, 2.4)
+        pitch = red.Tr2ScalarCurve("pitchCurve", 0.0, 2.0, 0.0698131700798, 0.10471975512,   2.66666666667, 2.4)
+        yaw = red.Tr2ScalarCurve("yawCurve",     0.0, 2.0, 0.12217304764, 0.157079632679,  2.66666666667, 2.4)
 
         euler_rotation = red.Tr2EulerRotation("MyObject", yaw, pitch, roll)
 
         expected = red.TriCurveSet("MyObject")
         expected.curves = [euler_rotation]
         actual = converter.convert_object()
-
         self.assertEqual(expected, actual)
 
 

@@ -47,5 +47,8 @@ class TestQuadraticBezierCurve(unittest.TestCase):
 
     def testToHermite(self):
         hermite = self.curve.to_hermite()
-        for i in xrange(11):
-            self.assertEqual(self.curve.evaluate(i), hermite.evaluate(i))
+        for i in (1.0, 1.2, 1.4, 1.6, 1.8, 2.0):
+            bezier = self.curve.evaluate(i)
+            hermite_result = hermite.evaluate(i)
+            self.assertAlmostEqual(bezier[0], bezier[0], delta=0.0000001)
+            self.assertAlmostEqual(hermite_result[1], hermite_result[1], delta=0.0000001)
